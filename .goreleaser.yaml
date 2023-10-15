@@ -10,12 +10,10 @@ builds:
       - windows
       - darwin
 archives:
-  - replacements:
-      darwin: macOS
-      linux: Linux
-      windows: Windows
-      386: i386
-      amd64: x86_64
+  - name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
+    format_overrides:
+      - goos: windows
+        format: zip
 dockers:
   - image_templates:
       - leslieleung/gin-application-template:{{ .Tag }}
