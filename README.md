@@ -11,7 +11,8 @@ The following features have already been implemented to simplify the initializat
 - [x] Makefile(run, dry-run)
 - [x] Gin Server
 - [x] Config Management
-- [ ] Goreleaser (GitHub Actions)
+- [x] Goreleaser (GitHub Actions)
 - [x] API Documentation (Swagger)
 - [ ] Database Connection
 - [ ] Logging
+- [ ] i18n Support
