@@ -18,6 +18,8 @@ dockers:
   - image_templates:
       - leslieleung/gin-application-template:{{ .Tag }}
       - leslieleung/gin-application-template:latest
+    extra_files:
+      - .
 checksum:
   name_template: 'checksums.txt'
 snapshot:
