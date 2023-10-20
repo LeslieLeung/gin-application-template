@@ -8,11 +8,12 @@ The following features have already been implemented to simplify the initializat
 
 - [x] Project Structure
 - [x] Dockerfile
-- [x] Makefile(run, dry-run)
+- [x] Makefile
 - [x] Gin Server
 - [x] Config Management
 - [x] Goreleaser (GitHub Actions)
 - [x] API Documentation (Swagger)
+- [x] Access Logs, Request ID
 - [ ] Database Connection
 - [ ] Logging
 - [ ] i18n Support
