@@ -1,10 +1,11 @@
 package app
 
 import (
+	"strconv"
+
 	"github.com/leslieleung/gin-application-template/internal/config"
 	"github.com/leslieleung/gin-application-template/internal/route"
 	"github.com/spf13/cobra"
-	"strconv"
 )
 
 var ServeCmd = &cobra.Command{
