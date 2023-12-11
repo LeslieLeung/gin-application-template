@@ -9,11 +9,14 @@ The following features have already been implemented to simplify the initializat
 - [x] Project Structure
 - [x] Dockerfile
 - [x] Makefile
-- [x] Gin Server
-- [x] Config Management
-- [x] Goreleaser (GitHub Actions)
-- [x] API Documentation (Swagger)
+- [x] [Gin](https://github.com/gin-gonic/gin) Server
+- [x] Config Management ([viper](https://github.com/spf13/viper))
+- [x] [GoReleaser](https://goreleaser.com/) (GitHub Actions)
+- [x] API Documentation ([swag](https://github.com/swaggo/swag))
 - [x] Access Logs, Request ID
+- [ ] Health Check
 - [ ] Database Connection
-- [ ] Logging
+- [x] Logging
 - [ ] i18n Support
+- [ ] Run as Script
+- [ ] Observability
