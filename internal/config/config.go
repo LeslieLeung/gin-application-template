@@ -8,6 +8,11 @@ type Config struct {
 
 var config *Config
 
+// Init creates a new Config instance.
+func Init(configPath string) {
+	New(configPath)
+}
+
 // New creates a new Config instance.
 func New(configPath string) *Config {
 	if config == nil {
