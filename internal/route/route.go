@@ -2,8 +2,18 @@ package route
 
 import (
 	"bytes"
+	"context"
+	"errors"
+	"github.com/gin-contrib/graceful"
+	"github.com/leslieleung/gin-application-template/internal/config"
 	"github.com/leslieleung/gin-application-template/internal/middleware"
+	healthcheck "github.com/tavsec/gin-healthcheck"
+	"github.com/tavsec/gin-healthcheck/checks"
+	healthcheckcfg "github.com/tavsec/gin-healthcheck/config"
 	"io"
+	"os/signal"
+	"strconv"
+	"syscall"
 	"time"
 
 	"github.com/gin-contrib/requestid"
@@ -18,20 +28,32 @@ import (
 	"go.uber.org/zap/zapcore"
 )
 
-func RegisterRoute() *gin.Engine {
-	r := gin.Default()
+func StartRouter() {
+	ctx, stop := signal.NotifyContext(context.Background(), syscall.SIGINT, syscall.SIGTERM)
+	defer stop()
+
+	r, err := graceful.Default(
+		graceful.WithAddr(":" + strconv.Itoa(config.GetConfig().GetInt("app.port"))),
+	)
+	if err != nil {
+		panic(err)
+	}
+	defer r.Close()
 
 	registerMiddlewares(r)
+	registerHealthCheck(r, ctx)
 
 	r.GET("/ping", controller.PingPong)
 	r.Any("/echo", controller.Echo)
 	// Swagger API docs
 	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerfiles.Handler))
 
-	return r
+	if err := r.RunWithContext(ctx); err != nil && !errors.Is(err, context.Canceled) {
+		panic(err)
+	}
 }
 
-func registerMiddlewares(r *gin.Engine) {
+func registerMiddlewares(r *graceful.Graceful) {
 	r.Use(requestid.New())
 	r.Use(middleware.WithLogger())
 	logger := log.Default()
@@ -53,4 +75,15 @@ func registerMiddlewares(r *gin.Engine) {
 			return fields
 		},
 	}))
+}
+
+func registerHealthCheck(r *graceful.Graceful, ctx context.Context) {
+	c := []checks.Check{
+		checks.NewContextCheck(ctx, "signals"),
+		// more checks here
+	}
+	err := healthcheck.New(r.Engine, healthcheckcfg.DefaultConfig(), c)
+	if err != nil {
+		return
+	}
 }

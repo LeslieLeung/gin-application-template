@@ -14,9 +14,10 @@ The following features have already been implemented to simplify the initializat
 - [x] [GoReleaser](https://goreleaser.com/) (GitHub Actions)
 - [x] API Documentation ([swag](https://github.com/swaggo/swag))
 - [x] Access Logs, Request ID
-- [ ] Health Check
+- [x] Health Check ([tavsec/gin-healthcheck](https://github.com/tavsec/gin-healthcheck))
 - [ ] Database Connection
-- [x] Logging
+- [x] Logging ([uber-go/zap](https://github.com/uber-go/zap))
 - [ ] i18n Support
 - [ ] Run as Script
 - [ ] Observability
+- [x] Graceful Shutdown ([gin-contrib/graceful](https://github.com/gin-contrib/graceful))
