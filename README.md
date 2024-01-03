@@ -1,5 +1,7 @@
 # gin-application-template
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=LeslieLeung_gin-application-template&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=LeslieLeung_gin-application-template)
+
 ## Description
 
 This is a template for a gin application. 
