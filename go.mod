@@ -3,20 +3,25 @@ module github.com/leslieleung/gin-application-template
 go 1.21
 
 require (
+	github.com/gin-contrib/graceful v0.1.0
 	github.com/gin-gonic/gin v1.9.1
 	github.com/spf13/cobra v1.7.0
 	github.com/spf13/viper v1.17.0
 	github.com/swaggo/files v1.0.1
 	github.com/swaggo/gin-swagger v1.6.0
 	github.com/swaggo/swag v1.16.2
+	github.com/tavsec/gin-healthcheck v1.5.0
+	gorm.io/driver/mysql v1.5.2
+	gorm.io/gorm v1.25.5
 )
 
 require (
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
 	github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f // indirect
-	github.com/gin-contrib/graceful v0.1.0 // indirect
+	github.com/go-sql-driver/mysql v1.7.1 // indirect
+	github.com/jinzhu/inflection v1.0.0 // indirect
+	github.com/jinzhu/now v1.1.5 // indirect
 	github.com/redis/go-redis/v9 v9.3.0 // indirect
-	github.com/tavsec/gin-healthcheck v1.5.0 // indirect
 	golang.org/x/sync v0.5.0 // indirect
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1 // indirect
 )

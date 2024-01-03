@@ -3,7 +3,7 @@ package middleware
 import (
 	"github.com/gin-contrib/requestid"
 	"github.com/gin-gonic/gin"
-	"github.com/leslieleung/gin-application-template/internal/log"
+	"github.com/leslieleung/gin-application-template/pkg/log"
 )
 
 func WithLogger() gin.HandlerFunc {
