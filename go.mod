@@ -5,7 +5,7 @@ go 1.21
 require (
 	github.com/gin-contrib/graceful v0.1.0
 	github.com/gin-gonic/gin v1.9.1
-	github.com/spf13/cobra v1.7.0
+	github.com/spf13/cobra v1.8.0
 	github.com/spf13/viper v1.17.0
 	github.com/swaggo/files v1.0.1
 	github.com/swaggo/gin-swagger v1.6.0
