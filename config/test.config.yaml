@@ -1,0 +1,6 @@
+app:
+  port: 8080
+
+database:
+  type: mysql
+  dsn: root:90vV4Esyp736dY812FwmigD5GARqCrka@tcp(hkg1.clusters.zeabur.com:32085)/zeabur?charset=utf8mb4&parseTime=True&loc=Local
