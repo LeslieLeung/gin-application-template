@@ -5,7 +5,7 @@ go 1.21
 require (
 	github.com/gin-contrib/graceful v1.0.0
 	github.com/gin-gonic/gin v1.9.1
-	github.com/natefinch/lumberjack v2.0.0+incompatible
+	github.com/natefinch/lumberjack v2.2.1+incompatible
 	github.com/spf13/cobra v1.8.0
 	github.com/spf13/viper v1.18.2
 	github.com/swaggo/files v1.0.1
