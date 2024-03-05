@@ -108,6 +108,8 @@ github.com/gabriel-vasile/mimetype v1.4.3 h1:in2uUcidCuFcDKtdcBxlR0rJ1+fsokWf+uq
 github.com/gabriel-vasile/mimetype v1.4.3/go.mod h1:d8uq/6HKRL6CGdk+aubisF/M5GcPfT7nKyLpA0lbSSk=
 github.com/gin-contrib/graceful v0.1.0 h1:kBWTKBx+xwYTS9Dklyps+S45zJAHdezlXzUnPsRW2PE=
 github.com/gin-contrib/graceful v0.1.0/go.mod h1:aKN7g7ftZhE1C7DQ+11OwqZKVfcmLrFCEC+fDG3Fi5E=
+github.com/gin-contrib/graceful v1.0.0 h1:0DwGiF2tVYkNdRq5JemQ6ImcNnDBQg1SghZCHEWWPh0=
+github.com/gin-contrib/graceful v1.0.0/go.mod h1:FzianhSwLIvfEtnSlInrThfnWOQ+/r7y0T4+RRKDgDI=
 github.com/gin-contrib/gzip v0.0.6 h1:NjcunTcGAj5CO1gn4N8jHOSIeRFHIbn51z6K+xaN4d4=
 github.com/gin-contrib/gzip v0.0.6/go.mod h1:QOJlmV2xmayAjkNS2Y8NQsMneuRShOU/kjovCXNuzzk=
 github.com/gin-contrib/requestid v0.0.6 h1:mGcxTnHQ45F6QU5HQRgQUDsAfHprD3P7g2uZ4cSZo9o=
