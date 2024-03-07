@@ -2,9 +2,9 @@ package app
 
 import (
 	"github.com/leslieleung/gin-application-template/internal/route"
-	"github.com/leslieleung/gin-application-template/pkg/config"
 	"github.com/leslieleung/gin-application-template/pkg/database"
 	"github.com/leslieleung/gin-application-template/pkg/log"
+	"github.com/leslieleung/mjolnir/config"
 	"github.com/spf13/cobra"
 )
 
