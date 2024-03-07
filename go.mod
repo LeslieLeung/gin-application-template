@@ -1,6 +1,6 @@
 module github.com/leslieleung/gin-application-template
 
-go 1.21
+go 1.22.0
 
 require (
 	github.com/gin-contrib/graceful v1.0.0
@@ -27,6 +27,7 @@ require (
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.5 // indirect
 	github.com/klauspost/compress v1.17.7 // indirect
+	github.com/leslieleung/mjolnir v0.0.0-20240307124408-f17260705b22 // indirect
 	github.com/montanaflynn/stats v0.7.1 // indirect
 	github.com/oapi-codegen/runtime v1.1.1 // indirect
 	github.com/redis/go-redis/v9 v9.5.1 // indirect
