@@ -5,6 +5,7 @@ go 1.22.0
 require (
 	github.com/gin-contrib/graceful v1.0.0
 	github.com/gin-gonic/gin v1.9.1
+	github.com/leslieleung/mjolnir v0.0.0-20240307124408-f17260705b22
 	github.com/natefinch/lumberjack v2.0.0+incompatible
 	github.com/spf13/cobra v1.8.0
 	github.com/spf13/viper v1.18.2
@@ -12,7 +13,7 @@ require (
 	github.com/swaggo/gin-swagger v1.6.0
 	github.com/swaggo/swag v1.16.3
 	github.com/tavsec/gin-healthcheck v1.6.1
-	gorm.io/driver/mysql v1.5.4
+	gorm.io/driver/mysql v1.5.6
 	gorm.io/gorm v1.25.7
 )
 
@@ -27,7 +28,6 @@ require (
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.5 // indirect
 	github.com/klauspost/compress v1.17.7 // indirect
-	github.com/leslieleung/mjolnir v0.0.0-20240307124408-f17260705b22 // indirect
 	github.com/montanaflynn/stats v0.7.1 // indirect
 	github.com/oapi-codegen/runtime v1.1.1 // indirect
 	github.com/redis/go-redis/v9 v9.5.1 // indirect
