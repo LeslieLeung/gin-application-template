@@ -1,6 +1,6 @@
 module github.com/leslieleung/gin-application-template
 
-go 1.22.0
+go 1.22.2
 
 require (
 	github.com/gin-contrib/graceful v1.0.0
