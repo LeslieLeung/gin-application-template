@@ -5,7 +5,7 @@ go 1.22.2
 require (
 	github.com/gin-contrib/graceful v1.0.0
 	github.com/gin-gonic/gin v1.9.1
-	github.com/leslieleung/mjolnir v0.0.0-20240307124408-f17260705b22
+	github.com/leslieleung/mjolnir v0.0.0-20240320165900-f7946d64e02a
 	github.com/natefinch/lumberjack v2.0.0+incompatible
 	github.com/spf13/cobra v1.8.0
 	github.com/spf13/viper v1.18.2
