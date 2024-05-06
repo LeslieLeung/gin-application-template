@@ -3,7 +3,7 @@ module github.com/leslieleung/gin-application-template
 go 1.22.2
 
 require (
-	github.com/gin-contrib/graceful v1.0.0
+	github.com/gin-contrib/graceful v1.0.2
 	github.com/gin-gonic/gin v1.9.1
 	github.com/leslieleung/mjolnir v0.0.0-20240320165900-f7946d64e02a
 	github.com/natefinch/lumberjack v2.0.0+incompatible
@@ -39,7 +39,7 @@ require (
 	github.com/xdg-go/stringprep v1.0.4 // indirect
 	github.com/youmark/pkcs8 v0.0.0-20201027041543-1326539a0a0a // indirect
 	go.mongodb.org/mongo-driver v1.14.0 // indirect
-	golang.org/x/sync v0.6.0 // indirect
+	golang.org/x/sync v0.7.0 // indirect
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1 // indirect
 )
 
