@@ -54,7 +54,7 @@ require (
 	github.com/gabriel-vasile/mimetype v1.4.3 // indirect
 	github.com/gin-contrib/requestid v1.0.2
 	github.com/gin-contrib/sse v0.1.0 // indirect
-	github.com/gin-contrib/zap v1.1.0
+	github.com/gin-contrib/zap v1.1.3
 	github.com/go-openapi/jsonpointer v0.20.3 // indirect
 	github.com/go-openapi/jsonreference v0.20.5 // indirect
 	github.com/go-openapi/spec v0.20.15 // indirect
